@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	struct Employee
+	{
+		int id;
+		char name[10];
+		struct date
+		{
+			int dd;
+			int mm;
+			int yy;	
+		}dob;
+	float sal;
+	};
+	struct Employee e1;
+	e1.id=101;
+	strcpy(e1.name,"Sai");
+	e1.dob.dd=3;
+	e1.dob.mm=8;
+	e1.dob.yy=2004;
+	e1.sal=25000;
+	printf("\nEmployee id:%d\nEmployee name:%s\nEmployee DOB:%d-%d-%d\nEmployee salary:%f",
+				e1.id,e1.name,e1.dob.dd,e1.dob.mm,e1.dob.yy,e1.sal);
+	
+}
